@@ -44,7 +44,7 @@ fun main() {
  * @param tequila
  */
 fun ejecutarrevision(tequila: Tequila) {
-    if (tequila != Brix) {
+    if (tequila is Brix) {
         println("La cantidad de: ${tequila.gradosbrix} litros de Tequila contienen ${tequila.cantidadlitros()} grados brix")
         return
     }
